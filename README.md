@@ -27,16 +27,10 @@ ___
 Simply that the role is correct, and, if the root is being updated on the vault, that users will be able to claim pTokens as expected afterwards (via fork test).
 ___
 
-### Q: Is the codebase expected to comply with any EIPs? Can there be/are there any deviations from the specification?
-No
-___
-
 ### Q: Are there any off-chain mechanisms or off-chain procedures for the protocol (keeper bots, arbitrage bots, etc.)?
 Yes. 
 
 1. There is an off-chain authorized responsibility to push merkle roots to the Vault on some interval. 
-
-2. Once reward tokens are released from added external protocols, an authorized actor must send claim and sweep transactions to every Rumpel Wallet (Safe with the Rumpel Guard and Rumpel Module added). These transactions would claim tokens from the external protocol, and pull them into the vault for pToken redemption.
 ___
 
 ### Q: Are there any hardcoded values that you intend to change before (some) deployments?
